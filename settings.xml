@@ -57,20 +57,20 @@ under the License.
    <password>admin123</password>
   </server>
   <server>
-    <id>snapshots</id>
+    <id>23-june</id>
     <username>admin</username>
     <password>admin123</password>
   </server>
   </servers>
 
-  <!--mirrors>
+  <mirrors>
     <mirror>
-        <id>repoMirror</id>
+        <id>23-june</id>
         <name>Our mirror for Maven repository</name>
-        <url>C:\Users\senapati\.m2\repository\</url>
+        <url>http://34.72.201.139:8081/repository/23-june/</url>
         <mirrorOf>*</mirrorOf>
     </mirror>
-</mirrors-->
+</mirrors>
 
  <repositories>
     <repository>
