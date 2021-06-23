@@ -16,7 +16,7 @@
     </dependency>
   </dependencies>
   <build>
-    <finalName>myapp</finalName>
+    <!--finalName>myapp</finalName-->
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
@@ -45,12 +45,12 @@
   <repository>
     <id>releases</id>
     <!-- nexus server details for release -->
-    <url>http://34.121.67.200:8081/repository/maven-releases/</url>
+    <url>http://10.128.0.12:8081/repository/maven-releases/</url>
   </repository>
   <snapshotRepository>
     <id>snapshots</id>
     <!-- nexus server details for snapshots-->
-    <url>http://34.121.67.200:8081/repository/maven-snapshots/</url>
+    <url>http://10.128.0.12:8081/repository/maven-snapshots/</url>
   </snapshotRepository>
 </distributionManagement>
 </project>
