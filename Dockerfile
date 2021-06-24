@@ -17,7 +17,7 @@ RUN gzip -V
 RUN tar -xvzf apache-tomcat-9.0.48-src.tar.gz -C /opt/tomcat --strip-components=1
 RUN cd /opt/tomcat
 RUN chgrp -R tomcat /opt/tomcat
-ADD target/java-tomcat-maven-example.war /opt/tomcat/webapps
+ADD target/MyWebAppTest-3.0-SNAPSHOT.war /opt/tomcat/webapps
 #RUN chown -R tomcat conf/ webapps/ work/ temp/ logs/
 #RUN update-java-alternatives -l
 ENV JAVA_HOME /usr/lib/jvm/java-8-openjdk-amd64
