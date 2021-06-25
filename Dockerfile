@@ -25,4 +25,4 @@ RUN cd /opt/tomcat/bin
 expose 8080
 #CMD /opt/tomcat/bin/catalina.sh run && tail -f /opt/tomcat/logs/catalina.out
 CMD ["/opt/tomcat/bin/catalina.sh", "run"]
-RUN chmod 777 Catalina.sh
+RUN chmod 777 ./startup.sh
