@@ -21,7 +21,8 @@ ADD target/MyWebAppTest-3.0-SNAPSHOT.war /opt/tomcat/webapps
 #RUN chown -R tomcat conf/ webapps/ work/ temp/ logs/
 #RUN update-java-alternatives -l
 ENV JAVA_HOME /usr/lib/jvm/java-8-openjdk-amd64
-Run cd /opt/tomcat/bin
+RUN cd /opt/tomcat/bin
 expose 8080
 #CMD /opt/tomcat/bin/catalina.sh run && tail -f /opt/tomcat/logs/catalina.out
 CMD ["/opt/tomcat/bin/catalina.sh", "run"]
+RUN chmod 777 Catalina.sh
