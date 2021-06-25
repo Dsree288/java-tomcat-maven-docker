@@ -24,4 +24,5 @@ ENV JAVA_HOME /usr/lib/jvm/java-8-openjdk-amd64
 RUN cd /opt/tomcat/bin
 expose 8080
 #CMD /opt/tomcat/bin/catalina.sh run && tail -f /opt/tomcat/logs/catalina.out
+RUN chmod 777 Catalina.sh
 CMD ["/opt/tomcat/bin/catalina.sh", "run"]
